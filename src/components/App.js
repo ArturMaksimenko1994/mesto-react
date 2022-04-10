@@ -94,12 +94,13 @@ function App() {
           onCardClick={handleCardClick}
           onCardDelete={handleCardDelete} 
           cards={cards} />
-        <Footer />
+        
         <PopupEdit isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} />
         <PopupAvatar isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} />
         <PopupPlace isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} />
         <ImagePopup card={selectedCard} onClose={closeAllPopups} />
         <PopupWithForm isOpen={isOpenPopotDelete} onClose={closeAllPopups} name="delete" title="Вы уверены?" buttonText="Да"> {/*подтверждение удаления*/}</PopupWithForm>
+        <Footer />
       </div>
     </CurrentUserContext.Provider>
   );
