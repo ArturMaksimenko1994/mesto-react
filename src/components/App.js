@@ -3,7 +3,7 @@ import Header from './Header/Header.js';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
 import PopupWithForm from './PopupWithForm/PopupWithForm.js';
-import PopupImage from './PopupImage/PopupImage.js';
+import ImagePopup from './ImagePopup/ImagePopup.js';
 import PopupAvatar from './PopupAvatar/PopupAvatar.js';
 import PopupEdit from './PopupEdit/PopupEdit.js';
 import PopupPlace from "./PopupPlace/PopupPlace.js";
@@ -98,7 +98,7 @@ function App() {
         <PopupEdit isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} />
         <PopupAvatar isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} />
         <PopupPlace isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} />
-        <PopupImage card={selectedCard} onClose={closeAllPopups} />
+        <ImagePopup card={selectedCard} onClose={closeAllPopups} />
         <PopupWithForm isOpen={isOpenPopotDelete} onClose={closeAllPopups} name="delete" title="Вы уверены?" buttonText="Да"> {/*подтверждение удаления*/}</PopupWithForm>
       </div>
     </CurrentUserContext.Provider>
