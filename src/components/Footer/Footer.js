@@ -1,10 +1,10 @@
 import React from "react";
 
-function footer() {
+function Footer() {
     return (
         <footer className="footer">
             <p className="footer__autop">&copy; 2021 Mesto Russia</p>
         </footer>
     );
 }
-export default footer;
+export default Footer;

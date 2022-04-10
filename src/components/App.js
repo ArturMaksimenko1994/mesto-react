@@ -7,7 +7,7 @@ import PopupAvatar from './PopupAvatar/PopupAvatar.js';
 import PopupEdit from './PopupEdit/PopupEdit.js';
 import PopupPlace from "./PopupPlace/PopupPlace.js";
 import CurrentUserContext from './../contexts/CurrentUserContext.js'
-import Footer from './Footer';
+import Footer from './Footer/Footer';
 import api from './../utils/api.js'
 
 function App() {
