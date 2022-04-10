@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header/Header.js';
 import Main from './Main/Main';
-import Footer from './Footer';
 import PopupWithForm from './PopupWithForm/PopupWithForm.js';
 import ImagePopup from './ImagePopup/ImagePopup.js';
 import PopupAvatar from './PopupAvatar/PopupAvatar.js';
 import PopupEdit from './PopupEdit/PopupEdit.js';
 import PopupPlace from "./PopupPlace/PopupPlace.js";
 import CurrentUserContext from './../contexts/CurrentUserContext.js'
+import Footer from './Footer';
 import api from './../utils/api.js'
 
 function App() {
