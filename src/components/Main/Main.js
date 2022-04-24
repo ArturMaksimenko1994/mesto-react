@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Card from './../Card/Card.js'
 import CurrentUserContext from './../../contexts/CurrentUserContext.js'
 
- const Main = ({onEditAvatar, onEditProfile, onAddPlace, onCardClick,  onCardDelete, cards}) =>{
+ const Main = ({onEditAvatar, onEditProfile, onAddPlace, onCardClick, onCardLike, onCardDelete, cards}) =>{
 
   const userContext = useContext(CurrentUserContext);
 
@@ -34,7 +34,7 @@ import CurrentUserContext from './../../contexts/CurrentUserContext.js'
 
         <section className="elements">
           <ul className="element">
-            {cards.map(card => <Card card={card} onCardClick={onCardClick}  onCardDelete={onCardDelete} key={card._id}/>)}
+            {cards.map(card => <Card card={card} onCardClick={onCardClick} onCardLike={onCardLike} onCardDelete={onCardDelete} key={card._id}/>)}
           </ul>
         </section>
       </main>
