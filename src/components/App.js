@@ -11,11 +11,11 @@ import CurrentUserContext from './../contexts/CurrentUserContext.js'
 import api from './../utils/api.js'
 
 function App() {
-
+  
+  const [cardDelete,setCardDelete] = useState("");
   const [cards, setCards] = useState([]);
   const [currentUser, setCurrentUser] = useState({});
   const [isOpenPopotDelete, setIsOpenPopotDelete] = useState(false);
-
 
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const handleEditProfileClick = () => {
@@ -107,7 +107,7 @@ function App() {
         })
   }
 
-  const [cardDelete,setCardDelete] = useState("")
+
   const handleCardDelete = (card) => {
     setIsOpenPopotDelete(true)
     setCardDelete(card)

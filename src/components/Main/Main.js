@@ -7,7 +7,6 @@ import CurrentUserContext from './../../contexts/CurrentUserContext.js'
   const userContext = useContext(CurrentUserContext);
 
   return (
-    <>
       <main className="content">
         <section className="profile">
           <div className="profile__info">
@@ -38,7 +37,6 @@ import CurrentUserContext from './../../contexts/CurrentUserContext.js'
           </ul>
         </section>
       </main>
-    </>
   );
 }
 export default Main;

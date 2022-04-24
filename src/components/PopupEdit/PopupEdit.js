@@ -11,12 +11,10 @@ const PopupEdit = ({isOpen, onClose, onUpdateUser}) => {
         setName(e.target.value);
     }
 
-
     const [description, setDescription] = useState('');
     const handleChangeDescription = (e) => {
         setDescription(e.target.value);
     }
-
 
     const handleSubmit = (e) => {
         e.preventDefault();
