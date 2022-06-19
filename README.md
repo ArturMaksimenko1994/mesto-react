@@ -35,5 +35,4 @@ ___
 
 ## Ссылка на GitHub Pages:
 
-- ссылка на GitHub Pages
 https://arturmaksimenko1994.github.io/mesto-react/index.html
